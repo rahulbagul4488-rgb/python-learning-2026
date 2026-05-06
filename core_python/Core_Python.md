@@ -1609,7 +1609,7 @@ print(keyword.kwlist)
 
 True, False, None
 
-**1 True**
+**1️⃣ True**
 
 ✅ Boolean constant → logical value "true" दर्शवतो.
 
@@ -1629,11 +1629,11 @@ if x:
 🧠 Internally: True म्हणजे integer 1 सारखं वागतो, पण semantic meaning वेगळं आहे.
 
 
-**2 False**
+**2️⃣ False**
 
 ❌ Boolean constant → logical value "false" दर्शवतो.
 
-👉 Type: bool
+👉 Type: `bool`
 
 ## Example
 
@@ -1651,11 +1651,11 @@ else:
 🧠 Internally: False म्हणजे integer 0 सारखं वागतो.
 
 
-***3 None**
+## 3️⃣ None
 
 🚫 Special constant → "no value" किंवा "null" represent करतो.
 
-👉 Type: NoneType
+👉 Type: `NoneType`
 
 ## Example
 
@@ -1668,7 +1668,7 @@ if z is None:
     print("Empty")   # Output: Empty
 ```
 
-🧠 Usage:
+## 🧠 Usage
 
 🔹 Functions मध्ये default return value (return नसेल तर None मिळतो).
 
@@ -1676,7 +1676,7 @@ if z is None:
 
 🔹 "no data" किंवा "missing value" represent करण्यासाठी.
 
-*⚠️ Important: None falsy आहे — म्हणजे if statement मध्ये False सारखं वागतो — पण False नाही!*
+> ⚠️ Important: `None` falsy आहे, पण `False` नाही.
 
 🎯 Summary
 
@@ -1686,12 +1686,120 @@ if z is None:
 
 🔹 None → Special constant (absence of value).
 
-**Boolean (True/False): हे लॉजिकल निर्णय घेण्यासाठी वापरतात. पायथनमध्ये True म्हणजे 1 आणि False म्हणजे 0 असते.**
+# 🧠 Advanced Concepts of None / Boolean in Python
 
-**None ला Boolean category मध्ये technically ठेवता येत नाही, कारण तो logical True/False नाही.पण Python keywords च्या grouping मध्ये आपण त्याला Constants मध्ये ठेवतो (True, False सोबत).**
+---
 
-**False म्हणजे "नाही" — None म्हणजे "माहीतच नाही / अस्तित्वच नाही"**
+## 1️⃣ Truthiness Concept
 
+Python मध्ये काही values **truthy** तर काही **falsy** असतात.
+
+## ❌ Falsy Values
+
+- `False`
+- `None`
+- `0`
+- `0.0`
+- `""` (empty string)
+- `[]` (empty list)
+- `{}` (empty dictionary)
+- `set()`
+
+बाकी जवळपास सगळ्या values **truthy** असतात.
+
+💡 म्हणजे `None` logical check मध्ये `False` सारखं वागतो, पण तो `False` नाही.
+
+## 💻 Example
+
+```python
+x = None
+
+if x:
+    print("Truthy")
+else:
+    print("Falsy")
+```
+
+### ✅ Output
+
+```python
+Falsy
+```
+
+---
+
+# 2️⃣ Identity vs Equality
+
+`None` check करण्यासाठी नेहमी `is None` वापरतात.
+
+## ✅ Correct Way
+
+```python
+x = None
+
+if x is None:
+    print("Empty")
+```
+
+## ❌ Avoid
+
+```python
+if x == None:
+    print("Empty")
+```
+
+⚠ `is` identity check करतो, तर `==` equality check करतो.
+
+💡 Python community मध्ये `is None` ही best practice मानली जाते.
+
+---
+
+# 3️⃣ Memory Internals
+
+`True` आणि `False` हे singleton objects आहेत.
+
+👉 Python internally त्यांना reuse करतो.
+
+`None` सुद्धा singleton object आहे.
+
+💡 म्हणजे संपूर्ण Python program मध्ये फक्त एकच `None` object असतो.
+
+## 💻 Example
+
+```python
+x = None
+y = None
+
+print(x is y)
+```
+
+### ✅ Output
+
+```python
+True
+```
+
+---
+
+# 🎯 Summary
+
+🔹 `None` falsy आहे, पण `False` नाही.
+
+🔹 `is None` वापरणे best practice आहे.
+
+🔹 `True`, `False`, आणि `None` हे singleton objects आहेत.
+
+🔹 `None` म्हणजे absence of value.
+
+---
+
+## 📌 Final Understanding
+
+✅ Boolean (True/False): हे लॉजिकल निर्णय घेण्यासाठी वापरतात. पायथनमध्ये True म्हणजे 1 आणि False म्हणजे 0 असते.
+
+📌 None ला Boolean category मध्ये technically ठेवता येत नाही, कारण तो logical True/False नाही. पण Python keywords grouping मध्ये आपण त्याला Constants मध्ये ठेवतो.
+
+💡 False म्हणजे "नाही" — None म्हणजे "माहीतच नाही / अस्तित्वच नाही"
 
 **2️⃣  Conditions**
 
