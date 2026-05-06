@@ -11,7 +11,7 @@ Example:
 
 ```python
 
-print(Hello, World!)
+print("Hello, World!")
 
 ```
 
@@ -162,6 +162,479 @@ Python AI/ML मध्ये #1 आहे कारण:
 
    - Runs on the server.
    - Python, PHP, Java, ASP.NET
+
+
+# Source Code
+
+Q) Source Code म्हणजे काय?
+
+तू Python मध्ये जे लिहितोस ते म्हणजे Source Code!
+
+🔹 Source Code = आपण लिहिलेला Python Code
+🔹 हे .py extension च्या file मध्ये साठवलं जातं
+🔹 उदा: hello.py, calculator.py
+
+एक साधं उदाहरण 👇
+
+'''python
+
+name= "Rahul"
+data= [12]
+
+'''
+
+Real Life उदाहरण 🏠
+
+Source Code म्हणजे घराचा नकाशा आहे!
+
+👷 Engineer → नकाशा बनवतो   (तू Code लिहितोस)
+🏠 घर       → नकाशावरून बनतं (Computer Code Execute करतो)
+
+नकाशा = Source Code
+घर    = Output
+
+📌 Source Code चे मुख्य Points
+
+🔹 1️⃣ Human Readable असतो
+       → माणसाला वाचता येतो
+
+🔹 2️⃣ .py file मध्ये असतो
+       → hello.py
+
+🔹 3️⃣ Computer directly वाचू शकत नाही
+       → म्हणून Interpreter लागतो
+
+🔹 4️⃣ तूच लिहितोस
+       → Variables, Functions, Logic
+
+
+🔹 One Liner:
+   "Programmer ने लिहिलेला Code 
+    म्हणजे Source Code!"
+
+📌 Source Code नंतर काय होतं?
+
+Source Code (.py)
+      ↓
+Interpreter वाचतो
+      ↓
+Byte Code बनतो (.pyc)
+      ↓
+PVM Execute करतो
+      ↓
+Output Screen वर!
+
+# Interpreter 
+
+Q) Interpreter म्हणजे काय? 
+
+Interpreter म्हणजे एक Translator आहे जो तुझा Code Line by Line वाचतो आणि Computer ला समजेल अशा भाषेत Convert करतो!
+
+Real Life उदाहरण 🌍
+
+समजा तू Marathi बोलतोस
+पण समोरचा माणूस फक्त English समजतो
+
+मग एक Translator लागतो जो:
+🔹 तुझं Marathi ऐकतो
+🔹 English मध्ये सांगतो
+
+Translator = Interpreter
+तुझं Marathi = Source Code
+समोरचा माणूस = Computer
+
+Interpreter काय करतो? 👇
+
+Source Code
+name = "Rahul"     ← Line 1 वाचली → Convert केली → Run केली
+print("Hello")     ← Line 2 वाचली → Convert केली → Run केली
+age = 20           ← Line 3 वाचली → Convert केली → Run केली
+
+→ एक एक Line असं करत जातो!
+
+📌 Interpreter चे मुख्य Points
+
+🔹 1️⃣ Line by Line काम करतो
+       → एक Line वाचतो
+       → Convert करतो
+       → Run करतो
+       → मग पुढची Line
+
+🔹 2️⃣ Error लगेच सांगतो
+       → चुकीची Line आली
+       → तिथेच थांबतो
+       → Error दाखवतो
+
+🔹 3️⃣ Byte Code बनवतो
+       → Source Code → Byte Code
+       → .py → .pyc
+
+🔹 4️⃣ Python मध्ये असतो
+       → Java मध्ये Compiler असतो
+       → Python मध्ये Interpreter असतो
+
+📌 Error आली तर काय होतं?
+
+name = "Rahul"      # ✅ Line 1 → OK → Run
+print("Hello")      # ✅ Line 2 → OK → Run
+prnt("World")       # ❌ Line 3 → Error! → थांबलो!
+age = 20            # ⏸️ Line 4 → Run होणारच नाही!
+
+→ Interpreter Line 3 वर थांबला
+→ Line 4 कधीच Run होणार नाही
+→ Error Fix केल्याशिवाय पुढे जाणार नाही!
+
+→ हेच Interpreter चं वैशिष्ट्य आहे! 🔥
+
+
+# Byte Code
+
+Byte Code म्हणजे Source Code आणि Machine Code मधला एक Middle Step आहे!
+
+Real Life उदाहरण 🌍
+
+समजा तू Marathi मध्ये बोलतोस
+पण समोरचा माणूस फक्त Chinese समजतो
+
+Direct Marathi → Chinese कठीण आहे!
+मग आधी Marathi → Hindi (Middle Step)
+मग Hindi → Chinese
+
+Marathi = Source Code
+Hindi   = Byte Code   ← हा Middle Step!
+Chinese = Machine Code
+
+Byte Code काय असतो? 👇
+
+Source Code (तू लिहिलेला)
+name = "Rahul"
+print("Hello")
+      ↓
+Interpreter Convert करतो
+      ↓
+Byte Code (Middle Language)
+\x47\x65\x74\x49\x74\x65...
+      ↓
+PVM Execute करतो
+      ↓
+Output!
+
+📌 Byte Code चे मुख्य Points
+
+🔹 1️⃣ Middle Step आहे
+       → Source Code नाही
+       → Machine Code पण नाही
+       → दोघांच्या मध्ये आहे!
+
+🔹 2️⃣ .pyc file मध्ये साठवतो
+       → hello.py  → Source Code
+       → hello.pyc → Byte Code
+
+🔹 3️⃣ PVM ला समजतो
+       → Byte Code फक्त PVM वाचतो
+       → माणसाला वाचता येत नाही
+
+🔹 4️⃣ Cross Platform आहे
+       → Windows चा Byte Code
+       → Mac वर पण चालतो! ✅
+
+📌 Byte Code कुठे साठवतो?
+
+तुझ्या Project Folder मध्ये:
+
+📁 MyProject
+   ├── hello.py        ← Source Code (तू लिहिलेला)
+   └── __pycache__
+         └── hello.pyc ← Byte Code (Interpreter बनवतो)
+
+→ Python आपोआप .pyc file बनवतो!
+→ तुला manually करायची गरज नाही!
+
+📌 Byte Code चा फायदा काय?
+
+🔹 फायदा 1️⃣ → Speed!
+   
+   पहिल्यांदा Run केलं:
+   Source Code → Byte Code → PVM → Output
+   
+   दुसऱ्यांदा Run केलं:
+   Byte Code → PVM → Output  ← जलद! 🚀
+   (Source Code परत Convert करायची गरज नाही!)
+
+🔹 फायदा 2️⃣ → Cross Platform!
+
+   Windows वर Byte Code बनवला
+         ↓
+   Mac वर पण चालतो!
+   Linux वर पण चालतो!
+
+
+   📌 Source Code vs Byte Code vs Machine Code
+
+┌─────────────────────────────────────────┐
+│ Source Code  → name = "Rahul"           │
+│               माणसाला समजतं ✅          │
+│               Computer ला समजत नाही ❌  │
+├─────────────────────────────────────────┤
+│ Byte Code    → \x47\x65\x74...          │
+│               माणसाला समजत नाही ❌      │
+│               PVM ला समजतं ✅           │
+├─────────────────────────────────────────┤
+│ Machine Code → 01001000 01100101...     │
+│               फक्त Processor समजतो ✅   │
+└─────────────────────────────────────────┘
+
+
+# PVM (Python Virtual Machine)
+
+Q) PVM (Python Virtual Machine) म्हणजे काय?
+
+PVM म्हणजे एक Virtual Engine आहे जो Byte Code वाचतो आणि Execute करतो!
+
+Real Life उदाहरण 🌍
+
+समजा तुझ्याकडे एक Recipe आहे
+पण ती Recipe Special Language मध्ये आहे
+
+ती Recipe वाचायला आणि 
+जेवण बनवायला एक Special Chef लागतो
+
+Special Chef = PVM
+Recipe       = Byte Code
+जेवण         = Output
+
+PVM काय करतो? 👇
+
+Byte Code (.pyc)
+\x47\x65\x74\x49...
+      ↓
+PVM वाचतो
+      ↓
+Line by Line Execute करतो
+      ↓
+Output Screen वर!
+"Hello Rahul"
+
+📌 PVM चे मुख्य Points
+
+🔹 1️⃣ Byte Code Execute करतो
+       → Byte Code Input घेतो
+       → Output देतो
+
+🔹 2️⃣ Virtual आहे म्हणजे काय?
+       → Real Machine नाही
+       → Software मध्ये बनवलेलं
+       → Engine आहे फक्त!
+
+🔹 3️⃣ Platform नुसार काम करतो
+       → Windows वर → Windows PVM
+       → Mac वर     → Mac PVM
+       → Linux वर   → Linux PVM
+
+🔹 4️⃣ Python Install केलं की
+       PVM आपोआप येतो!
+       → वेगळं Install करायची 
+         गरज नाही!
+
+
+📌 PVM Virtual का आहे?
+
+Real Machine (Computer):
+🔹 Hardware आहे
+🔹 Touch करता येतं
+🔹 Machine Code समजतो
+
+Virtual Machine (PVM):
+🔹 Software आहे
+🔹 Touch करता येत नाही
+🔹 Byte Code समजतो
+
+→ PVM एक Software Engine आहे
+  जो Byte Code Execute करतो!
+
+📌 PVM Cross Platform कसा?
+
+Without PVM:
+Windows Code → फक्त Windows वर चालेल ❌
+Mac Code     → फक्त Mac वर चालेल ❌
+
+With PVM:
+Code एकदा लिही
+      ↓
+Byte Code बनतो
+      ↓
+Windows PVM → Windows वर चालतो ✅
+Mac PVM     → Mac वर चालतो ✅
+Linux PVM   → Linux वर चालतो ✅
+
+→ "Write Once, Run Anywhere!" 🔥
+
+📌 PVM चा Process कसा असतो?
+
+Step 1 → Byte Code घेतो
+         \x47\x65\x74...
+
+Step 2 → एक एक Instruction वाचतो
+         Instruction 1 → Execute
+         Instruction 2 → Execute
+         Instruction 3 → Execute
+
+Step 3 → Output देतो
+         Screen वर दाखवतो
+
+
+आता पूर्ण Process एकत्र बघ 👇
+
+Source Code (.py)
+name = "Rahul"
+print("Hello")
+      ↓
+Interpreter
+Line by Line वाचतो
+      ↓
+Byte Code (.pyc)
+\x47\x65\x74...
+      ↓
+PVM
+Execute करतो
+      ↓
+Output
+"Hello Rahul" 🎉
+
+
+# Compiler vs Interpreter vs PVM
+
+अगदी Simple भाषेत 👇
+
+Compiler    = एकत्र सगळं काम करणारा
+Interpreter = एक एक करून काम करणारा
+PVM         = Execute करणारा Engine
+
+Real Life उदाहरण 🌍
+
+समजा तुला एक Marathi Book 
+English मध्ये Convert करायची आहे
+
+Compiler:
+🔹 पूर्ण Book आधी वाचतो
+🔹 मग एकत्र Convert करतो
+🔹 शेवटी English Book देतो
+
+Interpreter:
+🔹 एक Page वाचतो
+🔹 लगेच Convert करतो
+🔹 लगेच देतो
+🔹 मग पुढचा Page
+
+PVM:
+🔹 Convert झालेलं वाचतो
+🔹 Execute करतो
+🔹 Output देतो
+
+📌 Compiler म्हणजे काय?
+
+🔹 पूर्ण Code एकत्र वाचतो
+🔹 एकत्र Convert करतो
+🔹 मग Execute करतो
+🔹 Java, C, C++ मध्ये असतो
+
+Process:
+Source Code
+(पूर्ण Code)
+      ↓
+Compiler
+(सगळं एकत्र वाचतो)
+      ↓
+Machine Code
+      ↓
+Execute
+      ↓
+Output
+
+Error कधी कळतो?
+❌ सगळ्यात शेवटी कळतो!
+
+
+📌 तिघांमधला मुख्य फरक
+
+┌─────────────────────────────────────────────────────┐
+│              Compiler                               │
+│  ✅ पूर्ण Code एकत्र Convert करतो                  │
+│  ✅ जलद Execute होतो                               │
+│  ❌ Error शेवटी कळतो                               │
+│  ❌ Platform specific असतो                          │
+│  📌 Use: Java, C, C++                               │
+├─────────────────────────────────────────────────────┤
+│              Interpreter                            │
+│  ✅ Line by Line Convert करतो                      │
+│  ✅ Error लगेच कळतो                                │
+│  ✅ Beginners साठी सोपं                              │
+│  ❌ थोडा हळू असतो                                   │
+│  📌 Use: Python                                     │
+├─────────────────────────────────────────────────────┤
+│              PVM                                    │
+│  ✅ Byte Code Execute करतो                         │
+│  ✅ Cross Platform आहे                             │
+│  ✅ Python Install केलं की येतो                       │
+│  📌 Use: फक्त Python मध्ये                            │
+└─────────────────────────────────────────────────────┘
+
+📌 तिघांचं काम वेगळं आहे!
+
+Compiler    → Convert करतो (Java, C)
+Interpreter → Convert करतो (Python)
+PVM         → Execute करतो (Python)
+
+→ Compiler आणि Interpreter एकच काम करतात
+  पण वेगळ्या पद्धतीने!
+
+→ PVM चं काम वेगळंच आहे —
+  तो फक्त Execute करतो!
+
+📌 Error कधी कळतो?
+
+# Code उदाहरण
+name = "Rahul"      # Line 1
+print("Hello")      # Line 2
+prnt("World")       # Line 3 → Error!
+age = 20            # Line 4
+
+Compiler असता तर:
+→ Line 1, 2, 3, 4 सगळं वाचलं
+→ शेवटी Error सांगितला ❌
+→ वेळ जास्त लागला
+
+Interpreter (Python):
+→ Line 1 → OK ✅
+→ Line 2 → OK ✅
+→ Line 3 → Error! लगेच थांबलो ✅
+→ Line 4 → Run झालाच नाही ⏸️
+
+→ Python मध्ये Error लगेच कळतो — हाच मोठा फायदा! 🔥
+
+📌 Python मध्ये दोन्ही असतात!
+
+Python मध्ये:
+
+Interpreter ✅  +  PVM ✅
+     ↓                ↓
+Byte Code         Execute
+बनवतो             करतो
+
+→ Compiler नाही Python मध्ये!
+→ Interpreter + PVM मिळून
+  Python चालवतात!
+
+📌 Real World मध्ये कुठे काय?
+
+Language    | काय वापरतं
+────────────|─────────────────
+Python      | Interpreter + PVM
+Java        | Compiler + JVM
+C           | Compiler
+C++         | Compiler
+JavaScript  | Interpreter
+Ruby        | Interpreter
 
 
 # Phase 1: Naming & Basics
@@ -844,10 +1317,6 @@ print(a)  # [1, 2, 3]
 
 
 
-
-
-
-
 # Data Types:
 
 
@@ -970,40 +1439,71 @@ name = "Rahul"
    4) Module
 
 
+#  Operators 
+
+🔹 Operators in Python are symbols or keywords used to perform operations on operands.
+🔹 Such as arithmetic, comparison, logical, assignment, bitwise, membership, and identity operations.
+
+# 🔥 Types of Operators
+
+1️⃣ Arithmetic Operators
+
+## 1) +   # addition
+## 2) -   # subtraction
+## 3) *   # multiplication
+## 4) /   # division
+## 5) %   # modulus (remainder)
+## 6) / / # floor division
+## 7) **  # power
 
 
 
+2️⃣ Comparison Operators
+
+# 1) ==  # equal
+# 2) !=  # not equal
+# 3) >   # greater
+# 4) <   # less
+# 5) >=  # greater equal
+# 6) <=  # less equal
 
 
+3️⃣ Logical Operators
+
+# 1) and
+# 2) or
+# 3) not
+
+4️⃣ Assignment Operators
+
+# 1) = 
+# 2) +=
+# 3) -=
+# 4) *=
+# 5) /=
+# 6) %=
+# 7) **=
+
+5️⃣ Bitwise Operators
+
+# 1) &   # AND
+# 2) |   # OR
+# 3) ^   # XOR
+# 4) ~   # NOT
+# 5) <<  # left shift
+# 6) >>  # right shift
 
 
-# 🥈 Phase 2: Data understanding
-# 🥉 Phase 3: Operations
-$ 🟦 Phase 4: Flow control (keywords naturally येतात)
+6️⃣ Membership Operators
+
+# 1) in
+# 2) not in
 
 
+7️⃣ Identity Operators
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 1) is
+# 2) is not
 
 
 
@@ -1026,17 +1526,24 @@ $ 🟦 Phase 4: Flow control (keywords naturally येतात)
 # 🔒 Python Reserved Words म्हणजे काय?
 
 🔹 Reserved Words (Keywords) = Python ने आधीच वापरलेले शब्द.
+
 👉 हे variable / function / class नाव म्हणून वापरता येत नाहीत.
 
 
 ## 📋 Python Keywords – COMPLETE LIST (Python 3.x)
 
 False      await      else       import     pass
+
 None       break      except     in         raise
+
 True       class      finally    is         return
+
 and        continue   for        lambda     try
+
 as         def        from       nonlocal   while
+
 assert     del        global     not        with
+
 async      elif       if         or         yield
 
 👉 Total: 35 keywords
@@ -1060,49 +1567,169 @@ Reserved word ला suffix / prefix लावा:
 🔹 is_valid = True
 
 
+**1. Keywords ची Properties**
+
+🔹 Keywords case-sensitive असतात (True ≠ true).
+
+🔹 Python मध्ये keywords ची संख्या version नुसार बदलते (Python 2.x vs 3.x).
+
+🔹 keyword module वापरून keywords list मिळवता येते:
+
+'''python
+
+import keyword
+print(keyword.kwlist) 
+
+'''
+**2. Version Differences**
+
+🔹 Python 3.7 पासून keywords stable झाले आहेत.
+
+🔹 Python 3.5 मध्ये async आणि await add झाले.
+
+🔹 Python 2.x मध्ये print keyword होता, पण Python 3.x मध्ये तो function आहे.
+
+**Q) Diffrence between Keywords  and identifiers ?**
+
+🔹 Keywords = predefined.
+
+🔹 identifiers = user-defined.
+
+🔹 Keywords ला variable नाव म्हणून वापरता येत नाही.
+
+🔹 identifiers ला वापरता येतं.
+
+
 ## 🧠 Keywords category-wise (समजायला सोपं):
 
-**🔹 Boolean / Constants**
+**1️⃣ Boolean / Constants**
 
 True, False, None
 
+**1 True**
 
-**🔹 Conditions**
+✅ Boolean constant → logical value "true" दर्शवतो.
+
+👉 Type: bool
+
+Example:
+
+'''python
+
+x = True
+print(type(x))   # <class 'bool'>
+if x:
+    print("Yes")   # Output: Yes
+
+'''
+
+🧠 Internally: True म्हणजे integer 1 सारखं वागतो, पण semantic meaning वेगळं आहे.
+
+
+**2 False**
+
+❌ Boolean constant → logical value "false" दर्शवतो.
+
+👉 Type: bool
+
+Example:
+
+'''python
+
+y = False
+print(type(y))   # <class 'bool'>
+if y:
+    print("Yes")
+else:
+    print("No")   # Output: No
+
+'''
+
+🧠 Internally: False म्हणजे integer 0 सारखं वागतो.
+
+
+***3 None**
+
+🚫 Special constant → "no value" किंवा "null" represent करतो.
+
+👉 Type: NoneType
+
+Example:
+
+'''python
+
+z = None
+print(type(z))   # <class 'NoneType'>
+if z is None:
+    print("Empty")   # Output: Empty
+
+'''
+
+🧠 Usage:
+
+🔹 Functions मध्ये default return value (return नसेल तर None मिळतो).
+
+🔹 Optional variables initialize करण्यासाठी.
+
+🔹 "no data" किंवा "missing value" represent करण्यासाठी.
+
+*⚠️ Important: None falsy आहे — म्हणजे if statement मध्ये False सारखं वागतो — पण False नाही!*
+
+🎯 Summary
+
+🔹 True → Boolean constant (logical 1).
+
+🔹 False → Boolean constant (logical 0).
+
+🔹 None → Special constant (absence of value).
+
+**Boolean (True/False): हे लॉजिकल निर्णय घेण्यासाठी वापरतात. पायथनमध्ये True म्हणजे 1 आणि False म्हणजे 0 असते.**
+
+**None ला Boolean category मध्ये technically ठेवता येत नाही, कारण तो logical True/False नाही.पण Python keywords च्या grouping मध्ये आपण त्याला Constants मध्ये ठेवतो (True, False सोबत).**
+
+**False म्हणजे "नाही" — None म्हणजे "माहीतच नाही / अस्तित्वच नाही"**
+
+
+**2️⃣  Conditions**
 
 if, elif, else
 
 
-**🔹 Loops**
+**3️⃣ Loops**
 
 for, while, break, continue
 
-**🔹 Functions / Classes**
+**4️⃣ Functions / Classes**
 
 def, return, class, yield, lambda
 
 
-**🔹 Exceptions**
+**5️⃣ Exceptions**
 
 try, except, finally, raise, assert
 
 
-**🔹 Logic Operators**
+**6️⃣ Logic Operators**
 
 and, or, not, is, in
 
 
-**🔹 Scope / Context**
+**7️⃣ Scope / Context**
 
 global, nonlocal, with, as
 
 
-**🔹 Imports**
+**8️⃣ Imports**
 
 import, from
 
-**🔹 Async Programming**
+**9️⃣ Async Programming**
 
 async, await
 
 
 **“Reserved words are predefined keywords in Python that have special meaning and cannot be used as identifiers.”**
+
+**🎯 Summary Line**
+
+*“Python keywords म्हणजे reserved words ज्यांना special meaning आहे. ते identifiers म्हणून वापरता येत नाहीत, आणि Python चं grammar define करतात.”*
