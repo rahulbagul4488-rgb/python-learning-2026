@@ -1532,26 +1532,23 @@ name = "Rahul"
 
 ## 📋 Python Keywords – COMPLETE LIST (Python 3.x)
 
-False ,     await ,     else  ,    import  ,   pass ,
+| Category | Keywords |
+|---|---|
+| Boolean / Constants | `True`, `False`, `None` |
+| Conditions | `if`, `elif`, `else` |
+| Loops | `for`, `while`, `break`, `continue` |
+| Functions | `def`, `return`, `lambda` |
+| Exception Handling | `try`, `except`, `finally`, `raise` |
 
-None  ,     break ,    except ,    in  ,       raise ,
-
-True ,      class ,     finally ,   is  ,       return ,
-
-and ,       continue ,  for   ,     lambda  ,   try ,
-
-as ,       def  ,      from ,      nonlocal ,  while  ,
-
-assert ,    del  ,      global  ,   not   ,     with  ,
-
-async   ,   elif   ,    if    ,     or  ,       yield
-
-👉 Total: 35 keywords
-
+📌 Total Keywords in Python 3.x: `35`
 
 **❌ Reserved words वापरले तर काय होतं?**
 
-🔹 if = 10
+## 💻 Example
+
+```python
+if = 10
+```
 
 ❌ Error येईल:
 
@@ -1577,13 +1574,11 @@ Reserved word ला suffix / prefix लावा:
 
 🔹 keyword module वापरून keywords list मिळवता येते:
 
-'''python
-
+```python
 import keyword
 
-print(keyword.kwlist) 
-
-'''
+print(keyword.kwlist)
+```
 **2. Version Differences**
 
 🔹 Python 3.7 पासून keywords stable झाले आहेत.
@@ -1592,7 +1587,7 @@ print(keyword.kwlist)
 
 🔹 Python 2.x मध्ये print keyword होता, पण Python 3.x मध्ये तो function आहे.
 
-**Q) Diffrence between Keywords  and identifiers ?**
+## ❓ Difference Between Keywords and Identifiers
 
 🔹 Keywords = predefined.
 
@@ -1615,7 +1610,7 @@ True, False, None
 
 👉 Type: bool
 
-## Example
+## 💻 Example
 
 ```python
 x = True
@@ -1635,7 +1630,7 @@ if x:
 
 👉 Type: `bool`
 
-## Example
+## 💻 Example
 
 ```python
 y = False
@@ -1657,7 +1652,7 @@ else:
 
 👉 Type: `NoneType`
 
-## Example
+## 💻 Example
 
 ```python
 z = None
@@ -1728,7 +1723,7 @@ Falsy
 
 ---
 
-# 2️⃣ Identity vs Equality
+## 2️⃣ Identity vs Equality
 
 `None` check करण्यासाठी नेहमी `is None` वापरतात.
 
@@ -1754,7 +1749,7 @@ if x == None:
 
 ---
 
-# 3️⃣ Memory Internals
+## 3️⃣ Memory Internals
 
 `True` आणि `False` हे singleton objects आहेत.
 
@@ -1781,7 +1776,7 @@ True
 
 ---
 
-# 🎯 Summary
+## 🎯 Summary
 
 🔹 `None` falsy आहे, पण `False` नाही.
 
