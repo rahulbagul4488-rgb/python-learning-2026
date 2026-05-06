@@ -1615,19 +1615,16 @@ True, False, None
 
 👉 Type: bool
 
-Example:
+## Example
 
-'''python
-
+```python
 x = True
 
 print(type(x))   # <class 'bool'>
 
 if x:
-
     print("Yes")   # Output: Yes
-
-'''
+```
 
 🧠 Internally: True म्हणजे integer 1 सारखं वागतो, पण semantic meaning वेगळं आहे.
 
@@ -1638,23 +1635,18 @@ if x:
 
 👉 Type: bool
 
-Example:
+## Example
 
-'''python
-
+```python
 y = False
 
 print(type(y))   # <class 'bool'>
 
 if y:
-
     print("Yes")
-
 else:
-
     print("No")   # Output: No
-
-'''
+```
 
 🧠 Internally: False म्हणजे integer 0 सारखं वागतो.
 
@@ -1665,19 +1657,16 @@ else:
 
 👉 Type: NoneType
 
-Example:
+## Example
 
-'''python
-
+```python
 z = None
 
 print(type(z))   # <class 'NoneType'>
 
 if z is None:
-
     print("Empty")   # Output: Empty
-
-'''
+```
 
 🧠 Usage:
 
