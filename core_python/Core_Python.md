@@ -1532,19 +1532,19 @@ name = "Rahul"
 
 ## 📋 Python Keywords – COMPLETE LIST (Python 3.x)
 
-False      await      else       import     pass
+False ,     await ,     else  ,    import  ,   pass ,
 
-None       break      except     in         raise
+None  ,     break ,    except ,    in  ,       raise ,
 
-True       class      finally    is         return
+True ,      class ,     finally ,   is  ,       return ,
 
-and        continue   for        lambda     try
+and ,       continue ,  for   ,     lambda  ,   try ,
 
-as         def        from       nonlocal   while
+as ,       def  ,      from ,      nonlocal ,  while  ,
 
-assert     del        global     not        with
+assert ,    del  ,      global  ,   not   ,     with  ,
 
-async      elif       if         or         yield
+async   ,   elif   ,    if    ,     or  ,       yield
 
 👉 Total: 35 keywords
 
@@ -1563,7 +1563,9 @@ async      elif       if         or         yield
 Reserved word ला suffix / prefix लावा:
 
 🔹 if_value = 10
+
 🔹 class_name = "A"
+
 🔹 is_valid = True
 
 
@@ -1578,6 +1580,7 @@ Reserved word ला suffix / prefix लावा:
 '''python
 
 import keyword
+
 print(keyword.kwlist) 
 
 '''
@@ -1617,8 +1620,11 @@ Example:
 '''python
 
 x = True
+
 print(type(x))   # <class 'bool'>
+
 if x:
+
     print("Yes")   # Output: Yes
 
 '''
@@ -1637,10 +1643,15 @@ Example:
 '''python
 
 y = False
+
 print(type(y))   # <class 'bool'>
+
 if y:
+
     print("Yes")
+
 else:
+
     print("No")   # Output: No
 
 '''
@@ -1659,8 +1670,11 @@ Example:
 '''python
 
 z = None
+
 print(type(z))   # <class 'NoneType'>
+
 if z is None:
+
     print("Empty")   # Output: Empty
 
 '''
